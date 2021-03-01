@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ColorChange</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet" >
+    </head>
+    <body>
+        <div class="container" style="width: 100%; height: 100vh; display: flex; justify-content: center; align-items: center;">
+            <div class="wrapper" style="width: 70%; display: flex">
+                <div class="color-container" style="margin-right: 20px">
+                    <div class="color" style="width: 200px; height: 200px; margin-bottom: 10px;">
+
+                    </div>
+                    <button onclick="bolden()">Bolder</button>
+                </div>
+                <div class="adjust" style="width: 100%">
+                    <div class="adjust-red">
+                        <label>Red</label>
+                        <input type="range" min="1" max="255" value="240" id="red" onchange="updateColor()"/>
+                    </div>
+                    <div class="adjust-green">
+                        <label>Green</label>
+                        <input type="range" min="1" max="255" value="100" id="green" onchange="updateColor()"/>
+                    </div>
+                    <div class="adjust-blue">
+                        <label>Blue</label>
+                        <input type="range" min="1" max="255" value="100" id="blue" onchange="updateColor()"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js">
+        </script>
+    </body>
+</html>
